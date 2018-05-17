@@ -41,6 +41,3 @@ jspm_packages
 
 # build output from tsc
 build/
-
-# git local install
-git/

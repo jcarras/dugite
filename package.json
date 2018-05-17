@@ -1,7 +1,7 @@
 {
   "name": "dugite",
   "version": "1.63.0",
-  "description": "Elegant bindings for Git",
+  "description": "Elegant bindings for Git. Git deps for windows bundled for offline use like behind a corporate firewall.",
   "main": "./build/lib/index.js",
   "typings": "./build/lib/index.d.ts",
   "scripts": {
@@ -13,7 +13,6 @@
     "test:fast": "cross-env LOCAL_GIT_DIRECTORY=./git/ mocha --require ts-node/register test/fast/*.ts test/auth/*.ts",
     "test:slow": "cross-env LOCAL_GIT_DIRECTORY=./git/ mocha -t 20000ms --require ts-node/register test/slow/*.ts test/auth/*.ts",
     "test:external": "mocha -t 20000ms --require ts-node/register test/external/*.ts",
-    "postinstall": "node ./script/download-git.js",
     "prettify": "prettier \"{examples,lib,script,test}/**/*.ts\" --write",
     "is-it-pretty": "prettier \"{examples,lib,script,test}/**/*.ts\" --list-different"
   },
